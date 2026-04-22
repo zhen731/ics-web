@@ -251,6 +251,17 @@ export default function App() {
         </div>
       </main>
 
+      {/* AdSense Unit Placeholder */}
+      <footer className="px-10 pb-10 flex flex-col items-center shrink-0">
+        <div className={`w-full max-w-[1400px] min-h-[120px] flex items-center justify-center border-2 border-dashed rounded-[2.5rem] transition-colors ${isDarkMode ? 'border-zinc-800 bg-zinc-950/50 text-zinc-700' : 'border-zinc-100 bg-zinc-50/50 text-zinc-300'}`}>
+          <div className="flex flex-col items-center gap-1">
+            <span className="text-[10px] font-black uppercase tracking-widest">Advertisement Space</span>
+            <span className="text-[8px] opacity-50 uppercase tracking-tighter">Your AdSense Unit Code Goes Here</span>
+          </div>
+        </div>
+        <p className="text-[8px] font-black text-zinc-500 uppercase tracking-[0.4em] mt-8 opacity-20">ICS STUDIO © 2026</p>
+      </footer>
+
       {/* Course Detail Dialog (Fully Vertical) */}
       <Dialog open={!!editingCourse} onOpenChange={o => !o && setEditingCourse(null)}>
         <DialogContent showCloseButton={false} className={`rounded-[3rem] max-w-sm w-[90vw] p-10 border-none shadow-2xl ${isDarkMode ? 'bg-zinc-900 text-white' : 'bg-white text-black'} max-h-[90vh] overflow-y-auto custom-scrollbar`}>
